@@ -15,6 +15,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 import environ
 
+
 env = environ.Env()
 
 ENV_DIR = Path(__file__).resolve().parent.parent.parent
@@ -83,16 +84,25 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME':env('DATABASE_NAME'),
+#         'USER':env('DATABASE_USER'),
+#         'PASSWORD':env('DATABASE_PASS'),
+#         'HOST':env('DATABASE_HOST'),
+#         'PORT':env('DATABASE_PORT'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-         'ENGINE':'django.db.backends.postgresql_psycorg2',
-        'NAME':env('DATABASE_NAME'),
-        'USER':env('DATABASE_USER'),
-        'PASSWORD':env('DATABASE_PASS'),
-        'HOST':env('DATABASE_HOST'),
-        'PORT':env('DATABASE_PORT'),
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'django_project',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 

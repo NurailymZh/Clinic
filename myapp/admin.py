@@ -11,4 +11,4 @@ class ReceptionistAdmin(admin.ModelAdmin):
     list_display = ('id', ' user_id','first_name')  
     list_display_links = ('id', ' user_id','first_name')  
 
-admin.site.register(User, ReceptionistAdmin)
+# admin.site.register(User, ReceptionistAdmin)
