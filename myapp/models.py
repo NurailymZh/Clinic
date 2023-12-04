@@ -1,57 +1,34 @@
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser
 import uuid
+from account import models as account_models
 
-class User(AbstractBaseUser):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    username = models.CharField(max_length=30, unique=True)
-    email = models.EmailField(max_length=254, unique=True)
-    phone_number = models.CharField(max_length=20, unique=True)
-    password = models.CharField(max_length=20)
-    otp_code = models.CharField(max_length=6, unique=True, null=True)
-    email_verified = models.BooleanField(default=False)
-    is_admin = models.BooleanField(default=False)
-    is_superadmin = models.BooleanField(default=False)
+class Diagnose(models.Model):
+    name = models.CharField(max_length=20, unique=True, default="")
 
-class Receptionist(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    first_name = models.CharField(max_length=25)
-    last_name = models.CharField(max_length=25)
-    gender = models.CharField(max_length=6)
-
-class DoctorType(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    type = models.CharField(max_length=30, unique=True)
-
-class DoctorStatus(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    status = models.CharField(max_length=20, unique=True)
-
-class Doctor(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    doctor_type_id = models.ForeignKey(DoctorType, on_delete=models.CASCADE)
-    doctor_status_id = models.ForeignKey(DoctorStatus, on_delete=models.CASCADE)
-    doctor_no = models.CharField(max_length=5, unique=True)
-    doctor_count = models.CharField(max_length=5)
-    price = models.CharField(max_length=10)
-
-class PaymentType(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=30, unique=True)
-
-class Payment(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    payment_type_id = models.ForeignKey(PaymentType, on_delete=models.CASCADE)
-    customer_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    receptionist_id = models.ForeignKey(Receptionist, on_delete=models.CASCADE)
-    amount = models.CharField(max_length=10)
+class Service(models.Model):
+    name = models.CharField(max_length=30, default="")
+    img = models.ImageField(upload_to='services')
+    price = models.CharField(max_length=50, default="")
+    description = models.CharField(max_length=250, default="")
+    doctor = models.ForeignKey(account_models.CustomUser, on_delete=models.CASCADE, null=True)
 
 class Order(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    doctor_id = models.ForeignKey(Doctor, on_delete=models.CASCADE)
-    doctor_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    receptionist_id = models.ForeignKey(Receptionist, on_delete=models.CASCADE)
-    payment_id = models.ForeignKey(Payment, on_delete=models.CASCADE)
+    patient = models.ForeignKey(account_models.CustomUser, related_name='patient_id', on_delete=models.CASCADE)
+    doctor = models.ForeignKey(account_models.CustomUser, related_name='doctor_id', on_delete=models.CASCADE)
+    service = models.ForeignKey(Service, on_delete=models.CASCADE)
+    order_time = models.DateTimeField()
 
-    
+class DayofWeek(models.Model):
+    name = models.CharField(max_length=200)
+    def __str__(self) -> str:
+        return self.name
+
+class WorkingTime(models.Model):
+    name = models.CharField(max_length=255)
+    def __str__(self) -> str:
+        return self.name
+
+class DoctorsSchedule(models.Model):
+    doctor = models.ForeignKey(account_models.CustomUser, on_delete=models.CASCADE)
+    day_of_week = models.ForeignKey(DayofWeek, on_delete=models.CASCADE)
+    working_time = models.ForeignKey(WorkingTime, on_delete=models.CASCADE)

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
+@import "./reset.css";
 :root {
   --primary-color: #28bf96;
   --primary-color-dark: #209677;
@@ -29,6 +29,25 @@
 .btn:hover {
   background-color: var(--primary-color-dark);
 }
+.btn-link {
+  text-decoration: none; /* Убрать подчеркивание для ссылки */
+  background-color: #28bf96; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 10px 20px; /* Отступы */
+  border: none; /* Убрать границу */
+  border-radius: 5px; /* Закруглить углы */
+  cursor: pointer; /* Сделать курсор указателем при наведении */
+  display: inline-block; /* Сделать блоком внутри текста */
+}
+
+.btn {
+  background-color: #28bf96; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 10px 20px; /* Отступы */
+  border: none; /* Убрать границу */
+  border-radius: 5px; /* Закруглить углы */
+  cursor: pointer; /* Сделать курсор указателем при наведении */
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -36,13 +55,13 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: auto;
-  min-height: 100vh;
+  margin: 0 auto;
+  max-height: 100px;
   display: flex;
   flex-direction: column;
 }
 
-nav {
+.nav-list {
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
@@ -83,10 +102,11 @@ nav {
 }
 
 .content h1 {
-  margin-bottom: 1rem;
-  font-size: 3rem;
+  margin-bottom: 60px;
+  font-size: 46px;
   font-weight: 700;
   color: var(--text-dark);
+  padding-top: 70px;
 }
 
 .content h1 span {
@@ -94,7 +114,7 @@ nav {
 }
 
 .content p {
-  margin-bottom: 2rem;
+  margin: 30px auto;
   color: var(--text-light);
   line-height: 1.75rem;
 }
@@ -186,7 +206,7 @@ nav {
   }
 
   .header {
-    padding: 1rem;
+    /* padding: 1rem; */
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -197,4 +217,59 @@ nav {
   .image {
     grid-area: 1/1/2/2;
   }
+}
+
+/* Footer */
+
+.footer-list {
+  padding: 8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  }
+
+
+
+.footer-list-value,
+.footer-list-value a {
+  color: var(--text-light);
+  font-size: 15px;
+  font-weight: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+}
+
+
+
+.footer-list-value h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.login_or{
+  padding:8px;
+}
+
+
+.footer-list-value p {
+  max-width: 385px;
+  font-weight: 200;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.map {
+  width: 270px;
+  height: 200px;
+  background-color: #000;
+  margin: 0 5px;
+}
+
+.footer-list-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
 }

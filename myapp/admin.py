@@ -1,14 +1,16 @@
 from django.contrib import admin
-from .models import User
+from .models import Diagnose, Service, DoctorsSchedule, Order, DayofWeek, WorkingTime
 
-class UserAdmin(admin.ModelAdmin):
-    list_display = ('id', 'username','email', 'phone_number', 'password', 'otp_code', 'email_verified', 'is_admin', 'is_superadmin')  
-    list_display_links = ('id', 'username','email', 'phone_number', 'password', 'otp_code', 'email_verified', 'is_admin', 'is_superadmin')  
+admin.site.register(Diagnose)
 
-admin.site.register(User, UserAdmin)
+class ServicesAdmin(admin.ModelAdmin):
+    list_display = ('name', 'price', 'description', 'img', 'doctor')
+admin.site.register(Service, ServicesAdmin)
 
-class ReceptionistAdmin(admin.ModelAdmin):
-    list_display = ('id', ' user_id','first_name')  
-    list_display_links = ('id', ' user_id','first_name')  
+admin.site.register(Order)
+admin.site.register(DayofWeek)
+admin.site.register(WorkingTime)
 
-# admin.site.register(User, ReceptionistAdmin)
+class DoctorsScheduleAdmin(admin.ModelAdmin):
+    list_display = ('doctor', 'day_of_week', 'working_time')
+admin.site.register(DoctorsSchedule, DoctorsScheduleAdmin)

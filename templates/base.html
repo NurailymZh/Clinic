@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <title>Поликлиника</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="nav-list">
+          <div class="nav__logo">Поликлиника</div>
+          <ul class="nav__links">
+            <li class="nav-item"><a href="{% url 'home' %}"class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="{% url 'services' %}"class="nav-link">Услуги</a></li>
+            <li class="link"><a href="#">Портфолио</a></li>
+            <li class="link"><a href="#">Блог</a></li>
+            <li class="link"><a href="#">Контакты</a></li>
+          </ul>
+          <li class="nav-item">
+            {% if request.user.is_authenticated %}
+                                <a href="/account/logout" class="btn-link">Выйти</a>
+                            {% else %}
+                                <a href="{% url 'login' %}" class="btn-link">Войти</a>
+                            {% endif %}
+          </li>
+          
+        </div>
+      </div>
+        {% block content %}
+        {% endblock %}
+        {% include "partials/footer.html" %}
+  </body>
+</html>

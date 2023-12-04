@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+<div class="form-container">
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            <strong>Ошибка в форме:</strong>
+            <ul>
+            {% for field, errors in form.errors.items %}
+                <li>{{ field }}: {{ errors|join:", " }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <form method="POST" action="/account/register">
+        {% csrf_token %}
+        <div class="sign-up">
+            <h2 class="form-title">Регистрация</h2>
+            <div class="form-holder">
+                <input class="register_input" type="text" name="first_name" placeholder="Имя">
+                <input class="register_input" type="text" name="last_name" placeholder="Фамилия">
+                <input class="register_input" type="text" name="phone_number" placeholder="Телефон">
+                <input class="register_input" type="date" name="date_of_birth">
+                <input class="register_input" type="email" name="email" placeholder="Email">
+                <input class="register_input" type="text" name="username" placeholder="Логин">
+                <input class="register_input" type="password" name="password1" placeholder="Пароль">
+                <input class="register_input" type="password" name="password2" placeholder="Пароль">
+
+                <input class="register_btn" type="submit" value="Зарегистрироваться">
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
