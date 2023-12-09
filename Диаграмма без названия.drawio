@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-12-08T19:38:29.871Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="61izb_jHY0Qob443UhNW" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-09T18:38:05.023Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" etag="CeuYTR_rNzTgei4IzNXY" version="22.1.7" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="986" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="1197" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-1" target="SM2yVKvO26ahEewA_ULQ-2">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="SM2yVKvO26ahEewA_ULQ-1" target="SM2yVKvO26ahEewA_ULQ-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="140" as="sourcePoint" />
             <mxPoint x="159.99857142857135" y="199.99962732919252" as="targetPoint" />
@@ -14,82 +14,92 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-1" value="" style="ellipse;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="10" y="125" width="40" height="40" as="geometry" />
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-1" value="" style="ellipse;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="10" y="125" width="35" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-2" target="SM2yVKvO26ahEewA_ULQ-5">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="SM2yVKvO26ahEewA_ULQ-2" target="SM2yVKvO26ahEewA_ULQ-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-2" value="Сайтқа доступ" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-2" value="Жүйеге Кіру" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="120" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-5" target="SM2yVKvO26ahEewA_ULQ-10">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SM2yVKvO26ahEewA_ULQ-5" target="SM2yVKvO26ahEewA_ULQ-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-5" target="SM2yVKvO26ahEewA_ULQ-6">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="SM2yVKvO26ahEewA_ULQ-5" target="SM2yVKvO26ahEewA_ULQ-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-5" value="Тіркелген аккаунт дарма?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-5" value="Тіркелген аккаунт бар ма?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="200" width="115" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-6" target="SM2yVKvO26ahEewA_ULQ-15">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SM2yVKvO26ahEewA_ULQ-6" target="SM2yVKvO26ahEewA_ULQ-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-6" value="Жаңа аккаунт құру(Регистрация)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-6" value="Жаңа аккаунт құру(Регистрация)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="630" y="130" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-8" value="Жоқ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-8" value="Жоқ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="275" y="218" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-10" target="SM2yVKvO26ahEewA_ULQ-12">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SM2yVKvO26ahEewA_ULQ-10" target="SM2yVKvO26ahEewA_ULQ-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-10" value="Кіру" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-10" value="Кіру" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="157.5" y="350" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-12" target="SM2yVKvO26ahEewA_ULQ-30">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SM2yVKvO26ahEewA_ULQ-12" target="SM2yVKvO26ahEewA_ULQ-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-12" value="Логин және пароль енгізу" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-12" value="Логин және құпиясөз енгізу" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="157.5" y="470" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-14" value="Иә" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-14" value="Иә" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="180" y="300" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-15" target="SM2yVKvO26ahEewA_ULQ-26">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="SM2yVKvO26ahEewA_ULQ-15" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="440" y="480" as="targetPoint" />
+            <mxPoint x="690" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-15" value="&amp;nbsp;Формада көрсетілген деректерді толтыру" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-15" value="&amp;nbsp;Формада көрсетілген деректерді толтыру" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="630" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-17" value="Қате шығады(дұрыс еңгізілмеген ақпарат бойынша)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-17" value="Қате шығады(дұрыс еңгізілмеген ақпарат бойынша)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="760" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-19" value="Жоқ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-19" value="Жоқ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="780" y="350" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-20" target="SM2yVKvO26ahEewA_ULQ-10">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="SM2yVKvO26ahEewA_ULQ-20" target="SM2yVKvO26ahEewA_ULQ-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-20" value="Базада сақталады" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-20" value="Базада сақталады" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="350" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-22" value="Иә" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-22" value="Иә" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="520" y="340" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-26" target="SM2yVKvO26ahEewA_ULQ-20">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="kO78ruN_Abv1Za3l-2iY-3" target="SM2yVKvO26ahEewA_ULQ-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="kO78ruN_Abv1Za3l-2iY-3" target="SM2yVKvO26ahEewA_ULQ-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kO78ruN_Abv1Za3l-2iY-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-30" target="kO78ruN_Abv1Za3l-2iY-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SM2yVKvO26ahEewA_ULQ-26" target="SM2yVKvO26ahEewA_ULQ-17">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-26" value="Дұрыс еңгізілдіме?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="630" y="350" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="SM2yVKvO26ahEewA_ULQ-30" value="Сайтқа Кіру" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="SM2yVKvO26ahEewA_ULQ-30" value="Басты бетке өту" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kO78ruN_Abv1Za3l-2iY-1" value="" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="700" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kO78ruN_Abv1Za3l-2iY-3" value="Дұрыс еңгізілді ме?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="625" y="350" width="130" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
